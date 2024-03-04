@@ -1,0 +1,69 @@
+/* AboutUs.css */
+
+.AboutUs {
+    text-align: center;
+}
+
+.AboutUsHeader {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.image {
+    width: 350px; /* Define the width of the image */
+    height: 350px; /* Make the height of the image adjust automatically */
+    display: block;
+    margin: 0 auto;
+    margin-top: auto; /* Add top margin to separate the image from the rest of the content */
+    margin-bottom: auto;
+}
+
+.aaron {
+    width: 350px; /* Define the width of the image */
+    height: 350px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .sagi {
+    width: 350px; /* Define the width of the image */
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .elad {
+    width: 350px; /* Define the width of the image */
+    height: 350px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .tzadok {
+    width: 350px; /* Define the width of the image */
+    height: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+.description {
+    color: white; /* Define the color of the description text */
+    text-align: center; /* Center the text */
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.link {
+    color: #a1a1a1; /* Define the color of the link */
+    display: block; /* Convert the link into a block to center it */
+    margin: 0 auto;
+    font-weight: bold
+}

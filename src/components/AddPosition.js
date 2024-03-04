@@ -8,6 +8,7 @@ import "../style/AddPosition.css"
 const AddPosition = ({ id, type, onPositionAdded, onCancel }) => {
 
   const { t } = useTranslation();   // translation
+  const [loading, setLoading] = useState(false);
 
   const [positionData, setFormData] = useState({
     positionTitle: '',
@@ -28,6 +29,7 @@ const AddPosition = ({ id, type, onPositionAdded, onCancel }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const postData = {
         publisherId: id,
@@ -45,7 +47,8 @@ const AddPosition = ({ id, type, onPositionAdded, onCancel }) => {
         credentials: 'include', // Send cookies (credentials) with the request
         body: JSON.stringify(postData),
       });
-  
+      setLoading(false);
+
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -96,9 +99,9 @@ const AddPosition = ({ id, type, onPositionAdded, onCancel }) => {
           value={positionData.service} 
           onChange={handleChange} >
           <option value=""></option>
-          <option value="lohem">לוחם</option>
-          <option value="tomeh">תומך</option>
-          <option value="job">ג'וב</option>
+          <option value={t("lohem")}>{t("lohem")}</option>
+          <option value={t("tomeh")}>{t("tomeh")}</option>
+          <option value={t("job")}>{t("job")}</option>
         </select>
 
         <label className="label" htmlFor="availability">זמינות</label>
@@ -109,11 +112,11 @@ const AddPosition = ({ id, type, onPositionAdded, onCancel }) => {
           value={positionData.availability} 
           onChange={handleChange} >
           <option value=""></option>
-          <option value="immediate">מיידי</option>
-          <option value="notImmediate">לא מיידי</option>
+          <option value={t("immediate")}>{t("immediate")}</option>
+          <option value={t("notImmediate")}>{t("notImmediate")}</option>
         </select>
 
-        <label htmlFor="jobType">סוג תפקיד</label>
+        <label htmlFor={t("jobType")}>סוג המשרה</label>
         <select 
           className="select-input" 
           id="jobType" 
@@ -121,8 +124,8 @@ const AddPosition = ({ id, type, onPositionAdded, onCancel }) => {
           value={positionData.jobType} 
           onChange={handleChange} >
           <option value=""></option>
-          <option value="permanent">קבוע</option>
-          <option value="temporary">זמני</option>
+            <option value={t("permanent")}>{t("permanent")}</option>
+          <option value={t("temporary")}>{t("temporary")}</option>
         </select>
         
 
@@ -134,9 +137,9 @@ const AddPosition = ({ id, type, onPositionAdded, onCancel }) => {
           value={positionData.location} 
           onChange={handleChange} >
           <option value=""></option>
-          <option value="north">צפון</option>
-          <option value="central">מרכז</option>
-          <option value="south">דרום</option>
+          <option value={t("north")}>{t("north")}</option>
+          <option value={t("center")}>{t("center")}</option>
+          <option value={t("south")}>{t("south")}</option>
         </select>
 
         <label htmlFor="jobDescription">תאור כללי</label>
@@ -149,11 +152,16 @@ const AddPosition = ({ id, type, onPositionAdded, onCancel }) => {
           required
         ></textarea><br/>
 
-        
-
         <button type="submit">הוסף משרה</button>
         <button type="button" onClick={onCancel}>בטל</button>
+        {loading && (
+            <div className="loading-overlay">
+              <div className="loading-spinner"></div>
+            </div>
+          )}
+        
       </form>
+      
     </div>
   );
 };

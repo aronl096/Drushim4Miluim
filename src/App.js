@@ -27,8 +27,11 @@ import VolunteerProfile from './pages/VolunteerProfile';
 import VolunteerSearch from './pages/VolunteerSearch'
 
 // positions that will be used by both the recruiter and the volunteer
-import Positions from './pages/Positions'
+import RecruiterPositions from './pages/RecruiterPositions'
+import VolunteerPositions from './pages/VolunteerPositions'
 
+import Positions from './pages/VolunteerPositions';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
@@ -47,14 +50,19 @@ function App() {
           <Route path="/recruiterHome" element={<RecruiterHome />} />
           <Route path="/recruiterProfile" element={<RecruiterProfile />} />
           <Route path="/recruiterSearch" element={<RecruiterSearch />} />
+          <Route path="/recruiterPositions" element={<RecruiterPositions />} />
+
 
           {/* Routes for volunteer */}
           <Route path="/volunteerHome" element={<VolunteerHome />} />
           <Route path="/volunteerProfile" element={<VolunteerProfile />} />
           <Route path="/volunteerSearch" element={<VolunteerSearch />} />
+          <Route path="/volunteerPositions" element={<VolunteerPositions />} />
 
           {/* Route that will be used by both the recruiter and the volunteer */}
           <Route path="/positions" element={<Positions />} />
+
+          <Route path="/aboutUs" element={<AboutUs />} />
         </Routes>
       </Router>
     </I18nextProvider>

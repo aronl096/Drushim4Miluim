@@ -1,70 +1,105 @@
-# Drushim4miluim
+# Drushim4Miluim 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed in the third year of Ariel University's Department of Computer Science's Computer Software Engineering course in 2024.
 
-## Available Scripts
+Project site: https://github.com/oriazadok/Drushim4Miluim
 
-In the project directory, you can run:
+#### Authors
 
-### `npm start`
+- [Oria Zadok](https://www.github.com/oriazadok)  
+- [Sagi Yosef Azulay](https://www.github.com/sagir567)
+- [Noy Rosenbaum](https://www.github.com/noyrosenbaum)
+- [Tal Tosiano](https://www.github.com/taltosiano)
+- [Elad Shoham](https://www.github.com/elad361)
+- [Aaron Luchan](https://www.github.com/aronl096)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💡 About The Project: 💡
 
-### `npm test`
+This project was developed in order to help recruiters and volunteers for reserve(miluim) of the IDF find each other.  
+We all were called to the reserves and understood the need for such platform.  
+If you want to volunteer, you can enter your details and start looking for your best match position.  
+If you are a recruiter came and check if in our Database you can find a reserve soldier you need.  
+Our project have the option for recruiters to post positions and seeking for available volunteers .
+The volunteers can check and filter for available positions and apply.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is how we help the both sides to match easily.
 
-### `npm run build`
+Enjoy and feel free to contact us about any issue.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For more information : [Project presentation](https://github.com/oriazadok/Drushim4Miluim/blob/master/Drushim4Miluim.pptx)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💡 Gallery: 💡  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Home Page : ### 
+![](https://github.com/oriazadok/Drushim4Miluim/blob/master/src/images/homepage.jpg)
 
-### `npm run eject`
+### Recruiter Home Page : ###
+![](https://github.com/oriazadok/Drushim4Miluim/blob/master/src/images/recruiterHome.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Recruiter Search for volunteers : ###
+![](https://github.com/oriazadok/Drushim4Miluim/blob/master/src/images/recruiterSearch.jpg)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## About Us :
+![](https://github.com/oriazadok/Drushim4Miluim/blob/master/src/images/aboutus.jpg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 💡 Diagrams: 💡
 
-## Learn More
+# UML diagrams: 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Class Diagram
+![](https://github.com/oriazadok/Drushim4Miluim/blob/master/src/images/classdiagram.jpg)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Activity diagram
+![](https://github.com/oriazadok/Drushim4Miluim/blob/master/src/images/activitydiagram.jpg)
 
-### Code Splitting
+### ERD
+![](https://github.com/oriazadok/Drushim4Miluim/blob/master/src/images/erd.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Object diagram
+![](https://github.com/oriazadok/Drushim4Miluim/blob/master/src/images/objectdiagram.jpg)
 
-### Analyzing the Bundle Size
+### Sequence diagram
+![](https://github.com/oriazadok/Drushim4Miluim/blob/master/src/images/sequencediagram.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### State machine diagram
+![](https://github.com/oriazadok/Drushim4Miluim/blob/master/src/images/statemachinediagram.jpg)
 
-### Making a Progressive Web App
+### Use case diagram
+![](https://github.com/oriazadok/Drushim4Miluim/blob/master/src/images/usecase.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## How to use:
 
-### Deployment
+### Prerequisites:
+ - [NPM & Node.js](https://www.geeksforgeeks.org/node-js-npm-node-package-manager/)
+ - [React JS](https://www.geeksforgeeks.org/react-tutorial/)
+ - [Git](https://www.geeksforgeeks.org/introduction-to-github/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+ Once you have these prerequisites installed, you can follow these steps to download a React project from Github and run it on your computer:  
 
-### `npm run build` fails to minify
+ First you need to run our server at the following link :   
+ https://github.com/oriazadok/miluim_server    
+ The intructions to run the server found at the Readme.   
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ Clone the repository :
+ ```
+ git clone https://github.com/oriazadok/Drushim4Miluim.git
+ ```
+ Navigate to the project directory: 
+ ```
+ cd <repo-name>
+ ```
+ Install dependencies:
+ ```
+ npm install
+ ```
+ Start the development server:
+  ```
+ npm start
+ ```
+
+
+
